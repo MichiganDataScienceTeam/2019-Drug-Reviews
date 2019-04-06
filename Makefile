@@ -1,4 +1,4 @@
-.PHONY: clean data lint requirements sync_data_to_s3 sync_data_from_s3
+.PHONY: clean data lint requirements sync_data_to_s3 sync_data_from_s3 download_data
 
 #################################################################################
 # GLOBALS                                                                       #
@@ -80,7 +80,12 @@ test_environment:
 # PROJECT RULES                                                                 #
 #################################################################################
 
-
+## Download data
+download_data:
+	$(PYTHON_INTERPRETER) test_environment.py
+	wget https://archive.ics.uci.edu/ml/machine-learning-databases/00462/drugsCom_raw.zip
+	@unzip drugsCom_raw.zip -d data/raw/
+	@rm drugsCom_raw.zip
 
 #################################################################################
 # Self Documenting Commands                                                     #

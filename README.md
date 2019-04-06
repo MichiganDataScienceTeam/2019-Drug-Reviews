@@ -21,9 +21,9 @@ make create_environment
 conda activate drugreviews
 ```
 
-4. Preprocess the data
+4. Download the data
 ```
-make data
+make download_data
 ```
 
 Project Organization

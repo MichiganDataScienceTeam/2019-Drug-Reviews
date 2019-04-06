@@ -82,7 +82,6 @@ test_environment:
 
 ## Download data
 download_data:
-	$(PYTHON_INTERPRETER) test_environment.py
 	wget https://archive.ics.uci.edu/ml/machine-learning-databases/00462/drugsCom_raw.zip
 	@unzip drugsCom_raw.zip -d data/raw/
 	@rm drugsCom_raw.zip

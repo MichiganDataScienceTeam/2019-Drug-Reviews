@@ -80,11 +80,14 @@ test_environment:
 # PROJECT RULES                                                                 #
 #################################################################################
 
-## Download data
-download_data:
+data/raw/:
 	wget https://archive.ics.uci.edu/ml/machine-learning-databases/00462/drugsCom_raw.zip
+	@mkdir -p data/raw/
 	@unzip drugsCom_raw.zip -d data/raw/
 	@rm drugsCom_raw.zip
+
+## Download data
+download_data: data/raw/
 
 #################################################################################
 # Self Documenting Commands                                                     #

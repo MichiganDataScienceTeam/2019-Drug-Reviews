@@ -14,6 +14,7 @@ git clone https://github.com/MichiganDataScienceTeam/drugreviews
 2. Set up conda environment
 ```
 make create_environment
+make requirements
 ```
 
 3. Activate environment

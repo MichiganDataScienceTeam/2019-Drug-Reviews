@@ -14,15 +14,10 @@ numpy
 scipy
 tensorflow
 keras
-string
 unicodedata
 nltk
 contractions
 inflect
 beautifulsoup4 
 gensim
-itertools
 matplotlib
-os
-datetime
-collections

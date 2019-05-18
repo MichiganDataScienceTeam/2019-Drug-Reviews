@@ -14,7 +14,6 @@ numpy
 scipy
 tensorflow
 keras
-re
 string
 unicodedata
 nltk

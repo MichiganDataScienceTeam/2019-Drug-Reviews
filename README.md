@@ -31,8 +31,9 @@ Adding requirements
 ----------------
 
 If you add packages locally for your work, add them to the requirements.txt file.
+First, make sure you're in the drugreviews environment, so you don't remove existing dependencies that we want to keep!
 
-1. Save all the package names from your current environment
+1. Save all the package names from your current environment.
 ```
 pip freeze > requirements.txt
 ```

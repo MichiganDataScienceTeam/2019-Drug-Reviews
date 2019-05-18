@@ -20,3 +20,5 @@ inflect
 beautifulsoup4 
 gensim
 matplotlib
+jupyter 
+jupyterlab 

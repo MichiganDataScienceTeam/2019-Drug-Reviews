@@ -27,6 +27,23 @@ conda activate drugreviews
 make download_data
 ```
 
+Adding requirements
+----------------
+
+If you add packages locally for your work, add them to the requirements.txt file.
+First, make sure you're in the drugreviews environment, so you don't remove existing dependencies that we want to keep!
+
+1. Save all the package names from your current environment.
+```
+pip freeze > requirements.txt
+```
+
+2. Add and commit
+```
+git add requirements.txt
+git commit -m "I added these packages for <this reason>"
+```
+    
 Project Organization
 ------------
 
